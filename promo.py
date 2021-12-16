@@ -11,5 +11,14 @@ def calculate(m: int, n: int, p: list=[int]):
 #или стартовый если он больше заданного
 
     print(rez)
+    return rez
 
-calculate(3,3,p=[6, 2, 3])
+
+def test(rez, rez_bonus):
+    if rez == rez_bonus:
+        print('все верно')
+    else:
+        print('не верно')
+
+
+test(12, calculate(3,3,p=[6, 2, 3]))
